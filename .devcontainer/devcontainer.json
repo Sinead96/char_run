@@ -1,5 +1,0 @@
-{
-    "name": "Twingate Codespaces",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "postCreateCommand": "curl -s https://binaries.twingate.com/client/linux/install.sh | sudo bash && echo \"$TWINGATE_SERVICE_KEY\" | sudo tee /tmp/twingate-key.json > /dev/null && sudo twingate setup --headless /tmp/twingate-key.json && sudo twingate service-start"
-}
